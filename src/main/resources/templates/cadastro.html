@@ -7,19 +7,15 @@
 </head>
 <body>
     <form method="post" action="/cadastro">
-        <table data-th-each="p : ${funcionario}">
-            <label data-th-text="${p.nome}">Nome: </label>
+        <table>
+            <label>Nome: </label>
             <input type="text" name="nome"><br>
-
-            <label data-th-text="${p.cpf}">CPF: </label>
+            <label>CPF: </label>
             <input type="text" name="cpf"><br>
-
-            <label data-th-text="${p.login}">Login: </label>
+            <label>Login: </label>
             <input type="text" name="login"><br>
-
-            <label data-th-text="${p.senha}">Senha: </label>
+            <label>Senha: </label>
             <input type="text" name="senha"><br>
-            
             <button type="submit">Enviar</button>
         </table>
     </form>

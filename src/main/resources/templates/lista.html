@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Funcionários</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>-</th>
+                <th>Nome</th>
+                <th>Login</th>
+                <th>CPF</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-th-each="f : ${funcionarios}">
+                <td data-th-text="${f.id}"></td>
+                <td data-th-text="${f.nome}"></td>
+                <td data-th-text="${f.login}"></td>
+                <td data-th-text="${f.cpf}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
